@@ -11,7 +11,7 @@ class ShiftController extends Controller
 	public function shiftsByWeek($name)
 	{
 		$shiftData = Shift::where('person', $name)
-			->whereBetween('date', [Carbon::today(), '2019-1-01'])->get();
+			->whereBetween('date', [Carbon::today(), '2020-1-01'])->get();
 
 		return view('rota/name')
 			->with('data', ShiftController::formatDate($shiftData));

@@ -21,7 +21,7 @@
 			    <p class="card-text">
 			    	{{$shift->date}}<br>
 			    	{{$shift->start}} - {{$shift->finish}}<br> 
-		            @if ($shift->room_id == 7)
+		            @if ($shift->room_id == 'Other')
 		                {{$shift->other_text}}<br>
 		            @else
 		                {{$shift->room_id}}<br>

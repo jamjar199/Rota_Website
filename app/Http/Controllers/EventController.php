@@ -13,7 +13,7 @@ class EventController extends Controller
 
     public function eventsToday()
 	{
-	    return view('rota/event')
+		return view('rota/event')
 			->with('data', event::where('date', Carbon::today())->get());
 	}
 
